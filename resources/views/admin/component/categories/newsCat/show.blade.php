@@ -1,0 +1,1 @@
+@include('admin.component.categories.newsCat.index')

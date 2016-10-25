@@ -1,0 +1,197 @@
+.top-navigation .navbar-brand {
+  background-image: url("/frontend/img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 170px 27px;
+  background-position: left top 12px;
+  width: 230px;
+  height: 70px;
+  display: block;
+  position: relative; }
+
+.top-navigation .navbar-default {
+  background-color: #58595b;
+  height: 70px; }
+
+.top-navigation .navbar-nav > li > a {
+  padding-top: 25px;
+  padding-bottom: 23px; }
+
+.top-navigation .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 40px;
+  width: 400px; }
+
+.top-navigation .navbar-brand div {
+  font-weight: 300;
+  font-size: 15px;
+  color: #A9A9A9;
+  position: absolute;
+  bottom: 10px;
+  left: 0; }
+
+.top-navigation .navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300; }
+
+.top-navigation .navbar-default .navbar-nav > li.active > a {
+  color: #555; }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #58595b;
+  padding: 20px; }
+
+.footer .footer-place {
+  text-align: center;
+  color: #FFF; }
+
+.login {
+  margin: 10% auto;
+  width: 400px; }
+
+.input {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  margin: 15px 0; }
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  margin: 15px 0;
+  color: #58595B;
+  background: #C0C0C0;
+  border: none; }
+
+.login .alert {
+  padding-left: 40px; }
+
+@media screen and (max-width: 450px) {
+  .top-navigation .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    max-width: 210px !important; } }
+
+.front-pagination {
+  text-align: right; }
+
+.front-pagination .pagination > li {
+  margin: 0 5px; }
+
+.front-pagination .pagination > li.disabled span {
+  border: none;
+  border-radius: 0;
+  margin: 2px; }
+
+.front-pagination .pagination > li > a {
+  background-color: #a8aeb3;
+  color: #ececec;
+  border: none;
+  border-radius: 0;
+  margin: 2px; }
+
+.front-pagination .pagination .active span {
+  background-color: #dde0e2;
+  color: #a8aeb3;
+  border: none;
+  border-radius: 0;
+  margin: 2px; }
+
+.products .form-control {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border: 1px solid #D8D8D8;
+  outline: none;
+  width: 100%;
+  margin: 8px 0;
+  height: 42px;
+  box-shadow: none; }
+
+.products .form-control:active, .products .form-control:focus, button:focus, button:active, ul:focus, ul:active, li:focus, li:active, div:focus, div:active, div, a, a:focus, a:active, ul, li, input {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important; }
+
+.search-btn {
+  background-color: #D6D6D6;
+  border: none;
+  height: 42px;
+  line-height: 42px;
+  margin: 8px 0;
+  padding: 0 15px; }
+
+.product {
+  border: 1px solid #DEDEDE;
+  background: #F5F5F5;
+  padding: 15px 5px;
+  margin: 20px 0; }
+
+.product .product-title {
+  font-size: 36px;
+  color: #424242;
+  text-transform: capitalize; }
+
+.product .col-sm-4 {
+  width: 30%; }
+
+.product .product-details {
+  margin-top: 30px; }
+
+.product .key {
+  color: #767676;
+  font-size: 18px; }
+
+.product .value {
+  color: #2E2E2E;
+  font-size: 18px; }
+
+.product-play {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #C0C0C0;
+  background-color: #CACACA;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center; }
+
+.product-play i {
+  font-size: 60px;
+  line-height: 120px;
+  color: #555; }
+
+.download {
+  text-align: center;
+  width: 120px;
+  text-transform: capitalize;
+  padding: 10px;
+  background: #CACACA;
+  color: #424242;
+  border-radius: 3px;
+  margin-top: 5px; }
+
+.download a {
+  color: #424242; }
+
+.product-text {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #2E2E2E; }
+
+.btn-selection {
+  margin-top: 20px;
+  height: 50px;
+  background-color: #424242;
+  border: 1px solid #696969;
+  color: #fff;
+  font-size: 20px;
+  font-weight: lighter;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  width: 300px; }
+
+#note {
+  height: 120px; }

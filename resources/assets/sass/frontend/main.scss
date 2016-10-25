@@ -1,0 +1,260 @@
+body{
+  background-color:#D8D8D8;
+  font-family:'Open sans';
+}
+a:hover{
+  text-decoration:none;
+}
+.container{
+  max-width:1024px;
+}
+.content{
+  position:relative;
+  background:#FFF;
+}
+
+.popup {
+  transform: scale(0.8);
+  color:#FFF;
+  display:none;
+}
+
+.popup span{
+  font-size:18px;
+}
+
+.popup_visible .popup{
+  transform: scale(1);
+}
+
+.popup .progress-line{
+  width:300px;
+  text-align:center;
+  margin:5px auto;
+}
+
+.popup .converting{
+  max-width:500px;
+  text-align:center;
+}
+
+.popup .progress-line div{
+  border-width:1px;
+  background-color:#FFF;
+  height:1px;
+  width:0%;
+}
+
+.popup .percents{
+  text-align:center;
+}
+
+.popup button{
+  border:2px solid #FFF;
+  background:none;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  display:block;
+  padding:5px 25px;
+  outline:none;
+  margin:10px auto;
+}
+.popup button:focus{
+  outline:none;
+}
+
+.block{
+  position:relative;
+  margin-top:40px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.block .block-title{
+  color:#131313;
+  font-size:24px;
+  font-weight:300;
+  text-transform:uppercase;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.block .block-list{
+  font-weight: 300;
+  font-size:20px;
+  margin-bottom:15px;
+}
+
+.block .block-list a{
+  text-decoration:none;
+  color: #131313;
+}
+.block .block-list a:hover{
+  opacity:0.8;
+}
+
+.block .block-text{
+  color:#3A3A3A;
+  font-size:16px;
+  font-weight:300;
+}
+
+.not-found{
+  text-align:center;
+  color:#B8B8B8;
+}
+
+.block-more{
+  text-align: right;
+  margin-top:15px;
+}
+.block-more a{
+  color: #767c7f;
+  padding-right: 10px;
+}
+
+.index .flex-viewport{
+  margin: 44px !important;
+}
+.marketplace .flex-viewport{
+  margin: 20px 44px !important;
+}
+
+.index li img{
+  -webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.4), 0px -2px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.4), 0px -2px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.4), 0px -2px 5px rgba(0,0,0,0.2);
+  max-height:220px;
+}
+
+.index li a{
+  text-align:center;
+  width:160px;
+}
+
+.index li a div{
+  position:relative;
+  width: 166px;
+  color: #3a3a3a;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 8px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.index li a:hover{
+  text-decoration:none;
+}
+
+.index .flex-direction-nav .flex-prev{
+  line-height: 72px;
+  width: 27px;
+  height: 64px;
+  background-color: #F2F4F6;
+  border: 1px solid rgb(222, 228, 231);
+  padding-top: 0px;
+  margin-top: -40px;
+}
+
+.index .flex-direction-nav .flex-next{
+  line-height: 72px;
+  width: 27px;
+  height: 64px;
+  background-color: #F2F4F6;
+  border: 1px solid rgb(222, 228, 231);
+  padding-top: 0px;
+  margin-top: -40px;
+}
+
+.marketplace-btn div{
+  background-color: #E2E2E2;
+  border-radius: 5px;
+  width: 280px;
+  height: 40px;
+  color: #3a3a3a;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  margin: 0 auto;
+  top: 270px;
+  text-align:center;
+}
+a.marketplace-btn:hover{
+  text-decoration:none;
+  text-align:center;
+}
+
+.service{
+  background-color:#ebeff2;
+  padding:30px 20px 30px 20px;
+  margin-top:40px;
+}
+
+.service-image{
+  text-align:right;
+}
+
+.service-title{
+  color:#a8aeb7;
+  font-weight:600;
+  font-size:26px;
+  margin-bottom:30px;
+}
+
+.service-text{
+  color: #7c8690;
+  font-size: 15px;
+}
+
+.third-page{
+  max-height:260px;
+  overflow:hidden;
+}
+
+.third-page img{
+   width:100%;
+}
+
+.filter .form-control,.manage-content .form-control,.password_recovery .form-control,.post .form-control{
+  border-radius:0 !important;
+  -moz-border-radius:0 !important;
+  -webkit-border-radius:0 !important;
+  border:1px solid #D8D8D8;
+  outline:none;
+  width:100%;
+  margin:8px 0;
+  height:42px;
+  box-shadow:none;
+}
+.filter textarea.form-control,.manage-content textarea.form-control,.password_recovery textarea.form-control,.post textarea.form-control{
+  height:140px;
+}
+.filter .form-control.search-text{
+  padding-right:30px;
+}
+
+.post .form-control:active,.post .form-control:focus.password_recovery .form-control:focus,.password_recovery .form-control:active,.filter .form-control:focus,.manage-content .form-control:focus,.manage-content .form-control:active,.filter .form-control:active,button:focus,button:active,ul:focus,ul:active,li:focus,li:active,div:focus,div:active,div,a,a:focus,a:active,ul,li,input{
+  outline:none !important;
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.filter .navbar{
+  border-radius:0;
+  width:100%;
+}
+
+.search-btn{
+  background:none;
+  border:none;
+  position:absolute;
+  right:20px;
+  top:16px;
+  color:#999;
+}
+
+.search-btn:hover{
+  opacity:0.8;
+}
+

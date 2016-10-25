@@ -1,0 +1,40 @@
+<?php
+
+namespace App\Http\Controllers;
+
+
+use App\Models\Admin\Cat;
+use FFMpeg\FFMpeg;
+use FFMpeg\Format\Video\X264;
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+class TestController extends Controller
+{
+    public function brand(){
+        $html = '<select class="lrg-select" name="marka" id="marka" onchange="document.cookie=\'marka=\'+this.options[selectedIndex].value; fajax(\'ajax/man_models.php\', \'car-model-select\', \'id_marka\', this.options[selectedIndex].value);"> <option value="">მწარმოებელი</option><option value="70">ACURA</option><option value="1">ALFA ROMEO</option><option value="107">APRILIA</option><option value="76">ASTON MARTIN</option><option value="2">AUDI</option><option value="120">BELARUS</option><option value="78">BENTLEY</option><option value="3">BMW</option><option value="111">BOBCAT</option><option value="86">BOMBARDIER</option><option value="69">BUICK</option><option value="4">CADILLAC</option><option value="121">CASE</option><option value="71">CATERPILLAR</option><option value="161">CHANGAN</option><option value="84">CHERY</option><option value="5">CHEVROLET</option><option value="6">CHRYSLER</option><option value="7">CITROEN</option><option value="119">CLAAS</option><option value="128">CZ</option><option value="8">DAEWOO</option><option value="66">DAF</option><option value="9">DAIHATSU</option><option value="140">DERBI</option><option value="153">Detank</option><option value="154">Deutz-Fahr</option><option value="169">DMC</option><option value="127">DNEPR</option><option value="10">DODGE</option><option value="146">DONGFENG</option><option value="81">DUCATI</option><option value="137">ENDURO</option><option value="117">FERMEC</option><option value="74">FERRARI</option><option value="11">FIAT</option><option value="116">FIAT-HITACHI</option><option value="12">FORD</option><option value="157">Fortschritt</option><option value="143">FOTON</option><option value="45">GAZ</option><option value="13">GMC</option><option value="138">GREATWALL</option><option value="130">HAFEI</option><option value="104">HARLEY-DAVIDSON</option><option value="168">Haval</option><option value="160">Hidromek</option><option value="14">HONDA</option><option value="132">HOWO</option><option value="15">HUMMER</option><option value="167">HYSTER</option><option value="16">HYUNDAI</option><option value="53">INFINITI</option><option value="17">ISUZU</option><option value="62">IVECO</option><option value="85">JAC</option><option value="18">JAGUAR</option><option value="106">JAWA</option><option value="110">JCB</option><option value="19">JEEP</option><option value="101">KAMAZ</option><option value="159">KARSAN</option><option value="61">KAWASAKI</option><option value="20">KIA</option><option value="112">KOMATSU</option><option value="108">KRAZ</option><option value="105">KTM</option><option value="73">LAMBORGHINI</option><option value="21">LANCIA</option><option value="22">LAND ROVER</option><option value="23">LEXUS</option><option value="142">LIEBHERR</option><option value="58">LINCOLN</option><option value="125">LINTEX</option><option value="133">Liu Gong</option><option value="65">MAN</option><option value="75">MASERATI</option><option value="115">MASSEY FERGUSON</option><option value="80">MAYBACH</option><option value="102">MAZ</option><option value="24">MAZDA</option><option value="25">MERCEDES-BENZ</option><option value="26">MERCURY</option><option value="166">MG</option><option value="28">MINI</option><option value="29">MITSUBISHI</option><option value="123">MONDIAL</option><option value="48">MOSKVICH</option><option value="129">MURAVEY</option><option value="144">NAZ</option><option value="57">NEOPLAN</option><option value="114">NEW HOLLAND</option><option value="30">NISSAN</option><option value="56">OLDSMOBILE</option><option value="31">OPEL</option><option value="32">PEUGEOT</option><option value="136">POLARIS</option><option value="54">PONTIAC</option><option value="33">PORSCHE</option><option value="34">RENAULT</option><option value="79">ROLLS-ROYCE</option><option value="35">ROVER</option><option value="36">SAAB</option><option value="93">SATURN</option><option value="82">SCANIA</option><option value="55">SCION</option><option value="37">SEAT</option><option value="109">SETRA</option><option value="163">SHACMAN</option><option value="134">SINOTRUK – HOWO</option><option value="38">SKODA</option><option value="64">SSANGYONG</option><option value="39">SUBARU</option><option value="40">SUZUKI</option><option value="92">TATA</option><option value="113">TEREX</option><option value="155">TESLA</option><option value="41">TOYOTA</option><option value="141">TRIUMPH</option><option value="95">UAZ</option><option value="156">URAL</option><option value="44">VAZ</option><option value="42">VOLKSWAGEN</option><option value="43">VOLVO</option><option value="126">VOSKHOD</option><option value="158">Xingtai</option><option value="59">YAMAHA</option><option value="97">ZAZ</option><option value="122">ZEPPELIN</option><option value="99">ZIL</option><option value="131">ZOOMLINE</option><option value="103">ОTHER</option></select>';
+        $array = select_html_as_array($html);
+        foreach($array as $item){
+            //Cat::create(['parent'=>3,'name'=>$item]);
+        }
+        dump($array);
+    }
+    public function model(){
+        $html = '<select class="lrg-select" name="model" id="car-model-select" onchange="document.getElementById(&quot;last_model&quot;).value = this.value"><option value="">მოდელი</option><option value="1176">140</option><option value="1177">164</option><option value="1178">240</option><option value="1179">260</option><option value="1180">340-360</option><option value="1181">440 K</option><option value="1182">460 L</option><option value="1183">480 E</option><option value="1184">66</option><option value="1185">740</option><option value="1186">760</option><option value="1187">780 Bertone</option><option value="1188">850</option><option value="1189">940</option><option value="1190">960</option><option value="1898">C30</option><option value="1191">C70</option><option value="1192">Fh12</option><option value="1193">S40</option><option value="1194">S60</option><option value="1195">S70</option><option value="1196">S80</option><option value="1197">S90</option><option value="1198">V40</option><option value="1199">V50</option><option value="1200">V70</option><option value="1201">V90 Kombi</option><option value="1609">XC60</option><option value="1202">XC70</option><option value="1203">XC90</option></select>';
+        $array = select_html_as_array($html);
+        foreach($array as $item){
+            //Cat::create(['parent'=>127,'name'=>$item]);
+        }
+        dump($array);
+    }
+
+    public function modelUpdate(){
+        $html = '<select class="lrg-select" name="model" id="car-model-select" onchange="document.getElementById(&quot;last_model&quot;).value = this.value"><option value="">მოდელი</option><option value="1">145</option><option value="2">146</option><option value="3">147</option><option value="4">155</option><option value="5">156</option><option value="6">159</option><option value="7">164</option><option value="8">166</option><option value="10">33</option><option value="1823">4C</option><option value="11">6</option><option value="12">75</option><option value="1621">8C</option><option value="13">90</option><option value="14">Alfasud</option><option value="15">Alfetta</option><option value="16">Arna</option><option value="17">Brera</option><option value="18">Giulia</option><option value="19">Giulietta</option><option value="20">GT</option><option value="21">GTA Coupe</option><option value="22">GTV</option><option value="1622">MiTo</option><option value="23">Montreal</option><option value="24">RZ</option><option value="25">Spider</option><option value="1824">Sprint</option></select>';
+        $array = select_html_as_array($html);
+        foreach($array as $item) {
+            //$cat = Cat::where('name',$item)->first();
+            //$cat->update(['parent'=>5]);
+        }
+    }
+}

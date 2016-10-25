@@ -1,0 +1,46 @@
+.bottom-navigation{
+  border-radius:0;
+  margin-bottom:0;border:0;
+  background:rgba(70, 72, 74, 0.9);
+}
+
+.bottom-navigation .navbar-brand{
+  background-image:url('/frontend/img/logo.png');
+  background-repeat:no-repeat;
+  background-size:264px 42px;
+  background-position:center center;
+  width:350px;
+  height:80px;
+  display:block;
+}
+.bottom-navigation .nav.navbar-nav{
+  position:relative;
+  top:20px;
+}
+
+.bottom-navigation .nav.navbar-nav > li > a{
+  font-size:17px;
+  color:#FFF;
+}
+
+.footer{
+  margin-top:60px;
+}
+
+.footer nav{
+  padding:20px 0 0 0;
+}
+.footer .footer-bottom{
+  margin:30px;
+  color:#999999;
+}
+
+.footer .terms{
+  text-align:right;
+  color:#ececec;
+}
+
+.footer .terms a{
+  color:#ececec;
+  font-size:12px;
+}

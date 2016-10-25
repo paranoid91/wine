@@ -1,0 +1,83 @@
+.companies{
+  padding:0 35px;
+}
+.company-name{
+  font-size: 16px;
+  text-align: center;
+  color: #969393;
+}
+
+.company{
+  margin-top:10px;
+  text-align:center;
+  min-height:180px;
+}
+
+.company-title{
+  text-align:center;
+}
+
+.company-logo{
+  border:1px solid #D6D6D6;
+}
+
+.activity{
+  position:relative;
+  top:10px;
+}
+.chosen-container-active .chosen-single{
+  border:1px solid #D8D8D8 !important;
+}
+
+.company-nm{
+  margin-bottom:30px;
+  font-weight:bold;
+}
+
+.company-activities{
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+.company-text{
+  margin-bottom:40px;
+}
+
+.no-auth-text{
+  color:#F5133A;
+  margin-top:15px;
+}
+
+.company-info{
+  margin-top:15px;
+}
+
+.company-info div{
+  margin-bottom:10px;
+}
+
+.company-info span{
+  display:inline-block;
+  background:#414141;
+  width:30px;
+  height:30px;
+  padding:5px;
+  text-align:center;
+  margin-right:10px;
+}
+
+.company-info i{
+  color:#FFF;
+  font-style:normal;
+  font-size:16px;
+}
+.company-products{
+  margin-top:30px;
+}
+.company-products h1{
+  text-align:center;
+}
+
+.no-company-movies{
+  text-align:center;
+}

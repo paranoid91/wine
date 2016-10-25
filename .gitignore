@@ -1,0 +1,12 @@
+/vendor
+/node_modules
+/public/uploads
+/public/sync
+.env
+Homestead.yaml
+Homestead.json
+.idea
+/.idea
+.git
+/.git
+.DS_Store

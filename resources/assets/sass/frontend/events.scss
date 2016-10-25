@@ -1,0 +1,87 @@
+.events{
+  background-color:#efefef;
+  margin-top:40px;
+}
+.events h3{
+  color:#615F5F;
+  font-size:2rem;
+  font-weight:bold;
+}
+
+.events-img{
+  padding:20px;
+  text-align:center;
+}
+.events-desc{
+  color:#888888;
+  padding-bottom:20px;
+}
+
+.events-date{
+  margin-bottom:15px;
+  color:#888888;
+}
+
+.event-title{
+  color:#615F5F;
+  font-weight:bold;
+}
+
+.place-time{
+  color:#888888;
+}
+
+.preview-btn{
+  background-color:#524F4F;
+  color:#FFF;
+  padding:15px;
+  margin:10px 0;
+  display:block;
+  max-width:280px;
+  width:100%;
+  font-size:19px;
+  text-align:center;
+  border:none;
+}
+
+.preview-btn:hover{
+  color:#FFF;
+}
+
+.invitation input{
+  background-color:#F3F3F3;
+  padding:17px;
+  border:none;
+  outline:none;
+  width:220px;
+}
+
+.inv-button{
+  background-color:#524F4F;
+  border:none;
+  color:#FFF;
+  height:53px;
+  width:57px;
+  font-size:25px;
+  font-weight:bold;
+  position:relative;
+  top:3px;
+}
+
+.event .desc{
+  margin:30px 0 20px 0;
+}
+
+.event .desc,.event .review,.event .regulation{
+  color:#3F3B3B;
+  font-size:18px;
+}
+
+.event .review h3,.event .regulation h3{
+  font-weight:bold;
+  color:#3F3B3B;
+}
+
+.check-product{
+  display:none;
+}

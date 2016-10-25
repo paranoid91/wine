@@ -1,0 +1,51 @@
+.dash{
+  padding:4px 0 0 15px;
+  height:110px;
+  position:relative;
+}
+
+.dash b{
+  color:#FFF;
+  display:block;
+  margin:10px 10px 10px 0;
+  font-size:25px;
+}
+
+.dash span{
+  color:#FFF;
+}
+
+.dash i{
+  font-size:5em;
+  position:absolute;
+  right:15px;
+  top:10px;
+  opacity:0.2;
+  transition: all 0.4s ease-in-out;
+}
+
+.dash:hover i{
+  transform: scale(1.1);
+}
+
+.dash-products{
+  background-color:#00c0ef;
+  border-bottom:20px solid rgba(0,0,0,0.1);
+}
+
+.dash-synch{
+  background-color:#00a65a;
+  border-bottom:20px solid rgba(0,0,0,0.1);
+}
+.dash-synch i{
+  transform:rotate(180deg);
+}
+
+.dash-trailers{
+  background-color:#f39c12;
+  border-bottom:20px solid rgba(0,0,0,0.1);
+}
+.dash-screenings{
+  background-color:#dd4b39;
+  border-bottom:20px solid rgba(0,0,0,0.1);
+}
